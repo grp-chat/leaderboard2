@@ -22,37 +22,8 @@ var rounds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 var nickname = '';
 var connectedUser = '';
-var userOnline = '';
-var userOffline = '';
-var aumWins = 0;
-var aumChas = 1;
-var ninaWins = 0;
-var ninaChas = 1;
-var LKWins = 0;
-var LKChas = 1;
-var LXRWins = 0;
-var LXRChas = 1;
-var JHAWins = 0;
-var JHAChas = 1;
-var SZFWins = 0;
-var SZFChas = 1;
-var JLWins = 0;
-var JLChas = 1;
-var TJYWins = 0;
-var TJYChas = 1;
 
-var LOKWins = 0;
-var LOKChas = 1;
-var CJHWins = 0;
-var CJHChas = 1;
-var CEDWins = 0;
-var CEDChas = 1;
-var KXWins = 0;
-var KXChas = 1;
-var KNins = 0;
-var KNChas = 1;
 
-var lifeGiven = 0;
 
 function Person(first, last, age, eye) {
     this.firstName = first;
@@ -63,7 +34,7 @@ function Person(first, last, age, eye) {
 
 
 //---------------------------------------- USER PIN NUMBER PROMPT -----------------------------------------
-const promptMsg = () => {
+/* const promptMsg = () => {
     var nick = prompt("Please enter your pin number:");
     while (nick.length == 0) {
         alert("Please enter your pin number!");
@@ -136,7 +107,7 @@ const promptMsg = () => {
 };
 
 promptMsg();
-sock.emit('newuser', nickname);
+sock.emit('newuser', nickname); */
 //---------------------------------------- USER PIN NUMBER PROMPT -----------------------------------------
 
 
