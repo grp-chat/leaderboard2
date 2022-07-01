@@ -30,7 +30,7 @@
 
         .col-4{
             overflow-y: auto;
-            max-height: 500px;
+            /* max-height: 500px; */
         }
 
         #h1{
@@ -41,8 +41,8 @@
             font-size: 20px;
         }
         table {
-            width: 350px;
-            /* margin: auto; */
+            width: 300px;
+            margin: auto;
             text-align: center;
             /* table-layout: fixed; */
         }
@@ -59,6 +59,54 @@
         td:hover {
             background: orange;
         }
+
+        .button {
+            box-sizing: border-box;
+            appearance: none;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 3px 20px;
+            border-radius: 8px;
+            color: #1e90ff;
+            font-size: 23px;
+            font-weight: 600;
+            margin: 2px 2px 2px 0px;
+            transition: 0.4s;
+            display: block;
+            
+        }
+        .button-5 {
+            position: relative;
+        }
+        .button-5::after, .button-5::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            transition: all 0.4s, opacity 0.1s 0.4s;
+            opacity: 0;
+        }
+        .button-5::after {
+            bottom: 0;
+            right: 0;
+            border-bottom: 3px solid #1e90ff;
+            border-right: 3px solid #1e90ff;
+        }
+        .button-5::before {
+            top: 0;
+            left: 0;
+            border-left: 3px solid #1e90ff;
+            border-top: 3px solid #1e90ff;
+        }
+        .button-5:hover::after, .button-5:hover::before {
+            width: 100%;
+            height: 100%;
+            transition: 0.4s, opacity 0.1s;
+            opacity: 1;
+        } 
+        
     </style>
 </head>
 <body>
@@ -70,57 +118,70 @@
                 <h3>
                     All Videos by Student:
                 </h3>
-                <a href="lxr.html">LXR</a><br>
-                <a href="tjy.html">TJY</a><br>
-                <a href="lk.html">LK</a><br>
-                <a href="szf.html">SZF</a><br>
-                <a href="jv.html">JV</a><br>
-                <a href="jl.html">JL</a><br>
-                <a href="jha.html">JHA</a><br>
-
-                <a href="lok.html">LOK</a><br>
-                <a href="cjh.html">CJH</a><br>
-                <a href="ced.html">CED</a><br>
-                <a href="kx.html">KX</a><br>
-                <a href="kn.html">KN</a><br>
-                <a href="jt.html">JT</a><br>
-
-                <a href="jx.html">JX</a><br>
-                <a href="jz.html">JZ</a><br>
-                <a href="twn.html">TWN</a><br>
-                <a href="ljy.html">LJY</a><br>
-                <a href="eli.html">ELI</a><br>
-                <a href="lsh.html">LSH</a><br>
-                <a href="cur.html">CUR</a><br>
-                <a href="ryd.html">RYD</a><br>
-                <a href="ksy.html">KSY</a><br>
-                <a href="ct.html">CT (Just in!)</a><br>
+                <button class="button button-5" onclick="window.location.href = 'lxr.html';">LXR</button>
+                <button class="button button-5" onclick="window.location.href = 'tjy.html';">TJY</button>
+                <button class="button button-5" onclick="window.location.href = 'lk.html';">LK</button>
+                <button class="button button-5" onclick="window.location.href = 'szf.html';">SZF</button>
+                <button class="button button-5" onclick="window.location.href = 'jv.html';">JV</button>
+                <button class="button button-5" onclick="window.location.href = 'jl.html';">JL</button>
+                <button class="button button-5" onclick="window.location.href = 'jv.html';">JHA</button>
                 
-                
+                <button class="button button-5" onclick="window.location.href = 'lok.html';">LOK</button>
+                <button class="button button-5" onclick="window.location.href = 'cjh.html';">CJH</button>
+                <button class="button button-5" onclick="window.location.href = 'ced.html';">CED</button>
+                <button class="button button-5" onclick="window.location.href = 'kx.html';">KX</button>
+                <button class="button button-5" onclick="window.location.href = 'kn.html';">KN</button>
+                <button class="button button-5" onclick="window.location.href = 'jt.html';">JT</button>
+
+                <button class="button button-5" onclick="window.location.href = 'jx.html';">JX</button>
+                <button class="button button-5" onclick="window.location.href = 'jz.html';">JZ</button>
+                <button class="button button-5" onclick="window.location.href = 'twn.html';">TWN</button>
+                <button class="button button-5" onclick="window.location.href = 'ljy.html';">LJY</button>
+                <button class="button button-5" onclick="window.location.href = 'eli.html';">ELI</button>
+                <button class="button button-5" onclick="window.location.href = 'lsh.html';">LSH</button>
+                <button class="button button-5" onclick="window.location.href = 'cur.html';">CUR</button>
+                <button class="button button-5" onclick="window.location.href = 'ryd.html';">RYD</button>
+                <button class="button button-5" onclick="window.location.href = 'ksy.html';">KSY</button>
+                <button class="button button-5" onclick="window.location.href = 'ct.html';">CT (New)</button>
+
             </div>
             <div class="col-6" style="background-color:rgba(255, 255, 255, 0.3)">
                 
                 <div>
-                    <h5>Best speeds:</h5>
-                    <h6>Pre-Season 3</h6>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/WZproEtJsCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                    <h6 style="margin-top: 30px;">Pre-Season 2</h6>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/TyywhYR9Reg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/sy_DgCWnRVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/CZf_4239_RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/ISyTd-lEBTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/6kSZnk6FmFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/n_qFHpooQ2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/55bNyN1erU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Perfect Videos Submissions:</h3>
 
-                    <h6 style="margin-top: 30px;">Pre-Season 1</h6>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/_Li-y7hiCFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="390" height="220.5" src="https://www.youtube.com/embed/-jqVOawCWxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4>TJY 16/16 (Intermediate)</h4>
+                    <h4>TWN 9/9 (Entry)</h4>
+                    <h4>ELI 9/9 (Entry)</h4>
+                    <hr>
+
+                    <h3 style="margin-top: 50px;">Notable Best Speeds By Class:</h3>
+                    <h5>TJY: 9.035 seconds (Week 9) - Intermediate Class</h5>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AfsJVi5GTko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     --><iframe width="390" height="220.5" src="https://www.youtube.com/embed/AfsJVi5GTko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <h5 style="margin-top: 35px;">JV: 9.357 seconds (Week 5) - Intermediate Class</h5>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/J314QF27Gv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     --><iframe width="390" height="220.5" src="https://www.youtube.com/embed/J314QF27Gv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <h5 style="margin-top: 35px;">LSH: 12.568 seconds (Week 6) - Entry Class</h5>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/V_3K-x_-g6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     --><iframe width="390" height="220.5" src="https://www.youtube.com/embed/V_3K-x_-g6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <h5 style="margin-top: 35px;">TWN: 17.153 seconds (Week 7) - Entry Class</h5>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fFiMgk6TwMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     --><iframe width="390" height="220.5" src="https://www.youtube.com/embed/fFiMgk6TwMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <h5 style="margin-top: 35px;">KSY: 18.988 seconds (Week 8) - Entry Class</h5>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ImFVKLvUpIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     --><iframe width="390" height="220.5" src="https://www.youtube.com/embed/ImFVKLvUpIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 </div>
             </div>
             <div class="col-4">
                 <h5>Student Rankings:</h5>
+
+                <h4>Class: Sat 2pm (Intermediate)</h4>
                 <table>
                     <tr>
                         <th>#</th>
@@ -129,25 +190,139 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>LXR</td>
-                        <td>10</td>
+                        <td>TJY</td>
+                        <td>19</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>LXR</td>
-                        <td>10</td>
+                        <td>2</td>
+                        <td>LK</td>
+                        <td>15</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>LXR</td>
-                        <td>10</td>
+                        <td>3</td>
+                        <td>JV</td>
+                        <td>14.8</td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td>4</td>
+                        <td>SZF</td>
+                        <td>14.7</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
                         <td>LXR</td>
-                        <td>10</td>
+                        <td>14.6</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>JL</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>JHA</td>
+                        <td>7.5</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>H</td>
+                        <td>0</td>
                     </tr>
                 </table>
+
+                <h4 style="margin-top: 35px;">Class: Sun 2.30pm (Intermediate)</h4>
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Stacker</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CJH</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>KX</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>KN</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>LOK</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>JT</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>CED</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+
+                <h4 style="margin-top: 35px;">Class: Sat 4pm (Entry)</h4>
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Stacker</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>LSH</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>TWN</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>KSY</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>ELI</td>
+                        <td>12.5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>JX</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>RYD</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>LJY</td>
+                        <td>8.8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>JZ</td>
+                        <td>8.6</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>CUR</td>
+                        <td>7</td>
+                    </tr>
+                </table>
+
             </div>
         </div>
         <hr>      
