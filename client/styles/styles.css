@@ -5,3 +5,38 @@
 .top-res {
     font-size: 20px;
 }
+
+.arrow {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.up {
+    color: transparent;
+    text-shadow: 0 0 0 lime;
+}
+.down {
+    color: transparent;
+    text-shadow: 0 0 0 red;
+}
+
+.same {
+    display: inline-block;
+    color: transparent;
+    text-shadow: 0 0 0 yellow;
+    transform: rotate(90deg) perspective(0);
+    -ms-transform: rotate(90deg);	 
+    -webkit-transform: rotate(90deg);  
+    padding-right: 0px;
+    margin-right: -3px;
+}
+.same2 {
+    display: inline-block;
+    color: transparent;
+    text-shadow: 0 0 0 yellow;
+    transform: rotate(-90deg) perspective(0);
+    -ms-transform: rotate(-90deg);	 
+    -webkit-transform: rotate(-90deg);  
+    padding: 0px;
+    margin: 0px;
+}
